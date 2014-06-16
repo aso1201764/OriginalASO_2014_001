@@ -12,27 +12,38 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" android:name="android.intent.category.LAUNCHER">
+        android:theme="@style/AppTheme">
         <activity
             android:name="jp.ac.st.asojuku.original2014001.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android:intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name="jp.ac.st.asojuku.original2014001.daikiti" android:label="@string/app_name">
-        	<intent-filter>
-        		<action android:name="android.intent.action.MAIN"></action>
-        		<category android:name="android:intent.category.LAUNCHER"></category></intent-filter></activity>
+                    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity android:name="jp.ac.st.asojuku.original2014001.tyuukiti" android:label="@string/app_name">
-        	<intet-filter>
-        		<action android.name="android.intent.action.MAIN"></action>
-        		<category android:name="android:intent.category.LAUNCHER"></category></intet-filter></activity>
-        <activity android:name="jp.ac.st.asojuku.original2014001.tyuukiti" android:label="@string/app_name">
-        	<intent-filter>
-        		<action></action></intent-filter></activity>
-        <activity></activity></application>
+                    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.ac.st.asojuku.original2014001.kyou" android:label="@string/app_name">
+                    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.ac.st.asojuku.original2014001.daikyou" android:label="@string/app_name"></activity>
+                    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </application>
 
 </manifest>

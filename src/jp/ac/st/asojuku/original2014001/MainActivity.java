@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -14,6 +15,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+	}
+
+	@Override
+	protected void onResume() {
+		// TODO 自動生成されたメソッド・スタブ
+		super.onResume();
+		//ボタンをIDで探してボタン変数をつくる
+		Button btnOK = (Button)findViewById(R.id.btnOK);
+		//ボタン変数にリスナーを登録する
+		btnOK.setOnClickListener(this);
 	}
 
 	@Override
